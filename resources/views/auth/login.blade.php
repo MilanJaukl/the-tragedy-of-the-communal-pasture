@@ -1,10 +1,5 @@
 <x-layout.default>
-    <x-slot name="title">
-        Login
-    </x-slot>
-
-    <div class="container">
-        <h1>a</h1>
-        <button class="btn btn-primary">ok</button>a
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <x-auth.login-form />
     </div>
 </x-layout.default>

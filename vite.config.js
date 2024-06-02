@@ -12,4 +12,12 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        hmr: {
+            host: "fluffy-garbanzo-57vxrvxwpqwf66-5173.app.github.dev",
+            protocol: "wss",
+            clientPort: 443,
+        },
+    },
+    base: "/",
 });
