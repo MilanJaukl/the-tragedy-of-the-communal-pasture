@@ -23,7 +23,7 @@
                                     </label>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <input class="btn btn-lg btn-success btn-block col-5" type="submit" value="Login">
+                                    <input class="btn btn btn-success col-5" type="submit" value="Login">
                                 </div>
                             </fieldset>
                         </form>

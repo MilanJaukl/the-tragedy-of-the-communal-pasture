@@ -13,7 +13,6 @@ class AuthController extends Controller
 
         if (auth()->attempt($credentials)) {
             $user = auth()->user();
-
             return redirect()->route('get.admin.index')->with('success', 'Welcome back, ' . $user->name);
         }
         return redirect()->back()->with('error', 'Invalid credentials');

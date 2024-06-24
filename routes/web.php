@@ -12,6 +12,11 @@ Route::get('/', function () {
 Route::get('/login', [UserController::class, 'login'])->name('get.user.login');
 Route::post('/login', [AuthController::class, 'login'])->name('post.auth.login');
 
-Route::middleware(['auth'])->group(function () {
+
+Route::group(['middleware' => ['role:teacher']], function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('get.admin.index');
 });
+
+Route::get('/test', function () {
+    return 'test';
+})->name('test');
