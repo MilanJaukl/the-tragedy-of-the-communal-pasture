@@ -1,2 +1,28 @@
 @import "bootstrap-override.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-image: url("../../public/images/index/welcome.jpg");
+    background-size: 100% 100%; /* Resize the background image to cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Ensure the body takes full height of the viewport */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.container-default {
+    @extend .position-absolute;
+    @extend .start-50;
+    @extend .top-50;
+    @extend .translate-middle;
+    @extend .bg-white;
+    @extend .p-5;
+    @extend .border;
+    @extend .border-1;
+    @extend .rounded;
+}

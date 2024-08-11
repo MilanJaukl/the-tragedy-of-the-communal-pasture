@@ -8,13 +8,18 @@
     <title>Laravel</title>
 </head>
 
-<body>
-    {{ $slot }}
+<body $attribute>
+    <div class="position-absolute start-50 top-50 translate-middle bg-white p-5 border border-1 rounded">
+        {{ $slot }}
 
-     @if (session('error'))
+    </div>
+
+
+    @if (session('error'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             {{ session('error') }}
         </div>
     @endif
 </body>
+
 </html>

@@ -1,9 +1,9 @@
-<div class="border border-1 rouded shadow p-3" style="width: 350px">
+<div class="border border-1 rouded shadow p-5 bg-white rounded" style="width: 350px">
         <div class="row">
             <div class="col-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title text-center">Přihlásit se</h3>
+                        <h1 class="panel-title text-center">Přihlásit se</h1>
                     </div>
                     <div class="panel-body mt-3">
                         <form action="{{ route('post.auth.login') }}" method="POST" accept-charset="UTF-8" role="form">
